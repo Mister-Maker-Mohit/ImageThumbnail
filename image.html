@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <title>Image Thumbnail</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style media="screen">
+
+    body {
+      border-top : 20px solid #ccc;
+    }
+
+
+    .main-conatainer-1{
+      margin-top: 70px;
+    }
+
+    .main-conatainer-2{
+      margin-top: 10px;
+      margin-bottom: 60px;
+    }
+
+    .banner a{
+      position: relative;
+      display : block;
+
+    }
+
+    .banner a img {
+      height : 250px !important;
+    }
+
+    .banner a::before{
+      background: rgb(132, 16, 142) none repeat scroll 0 0;
+      content : "";
+      height : 100%;
+      opacity: 0.5;
+      position: absolute;
+      transform: scaleX(0);
+      transition: all 0.5s ease 0s;
+      width : 100%;
+    }
+
+    .banner:hover a::before{
+      transform: scaleX(1);
+    }
+
+    .banner a::after{
+      background: rgb(132, 16, 142) none repeat scroll 0 0;
+      content : "\f0c1";
+      height : 60px;
+      border-radius: 50%;
+      bottom: 0;
+      font-family: fontawesome;
+      left : 0;
+      line-height : 50px;
+      margin : auto;
+      position: absolute;
+      right : 0;
+      text-align: center;
+      top : 0;
+      transform: scale(3);
+      transition: all 0.3s ease 0s;
+      width : 60px;
+      opacity: 0;
+      color : #fff;
+      border : 6px solid #ccc;
+    }
+
+    .banner:hover a::after{
+      transform: scale(1);
+      opacity: 0.4;
+    }
+
+
+
+    @media (max-width : 770px) {
+      .banner img{
+        margin-top : 20px;
+      }
+    }
+
+    footer {
+      padding: 100px 0;
+      background-color: #ccc;
+      margin: 0px;
+    }
+
+    footer p{
+      text-align: center;
+      color : #000000;
+    }
+  </style>
+</head>
+<body>
+  <section  class="main-conatainer-1">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="banner">
+          <a href="#"><img src="http://avante.biz/wp-content/uploads/Best-Wallpaper-Hd/Best-Wallpaper-Hd-062.jpg" class="img-responsive"></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <div class="banner">
+          <a href="#"><img src="http://binarynote.com/wallpaper/wp-content/uploads/2014/06/abraham-lincoln-vampire-hunter-wallpaper-1680x1050.jpg" class="img-responsive"></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <div class="banner">
+          <a href="#"><img src="http://s1.picswalls.com/wallpapers/2014/06/18/ships-background_054040254_43.jpg" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section  class="main-conatainer-2">
+
+<div class="container">
+  <div class="row main-row">
+    <div class="col-md-4 col-sm-4">
+      <div class="banner">
+        <a href="#"><img src="http://www.tokkoro.com/picsup/1349494-the-amazing-spider-man.jpg" class="img-responsive"></a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="banner">
+        <a href="#"><img src="https://wallpaperscraft.com/image/naruto_hatake_kakashi_art_105057_1920x1080.jpg" class="img-responsive"></a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="banner">
+        <a href="#"><img src="http://www.mybligr.com/wp-content/uploads/2017/07/Download-Most-Beautiful-Summer-Desktop-Mobile-Wallpapers-30.jpg" class="img-responsive"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<footer>
+
+  <p>  &copy; 2018 Created by Mohit Aggarwal</p>
+</footer>
+</body>
+</html>
